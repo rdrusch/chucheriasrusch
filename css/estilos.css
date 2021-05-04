@@ -1,0 +1,535 @@
+/*ESTILOS GENERALES*/
+.contenedor{
+    max-width: 150rem;
+}
+body{
+    background-color: #ffffff;
+    color: #232323;
+    font-family: poppins, sans-serif;
+    margin:0;
+    padding:0;
+    }
+main{
+    margin-top: 15rem;
+}
+a{
+    text-decoration: none;}
+header{
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(110,192,147,1) 57%, rgba(253,191,45,1) 100%);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 2;
+    }
+.contenedorLogo{
+    display: flex;
+    justify-content: center;
+}
+.logoHeader{
+    width: 6%;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    }
+h1{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    font-size: 50px;
+    text-align: center;
+    }
+
+
+/*ESTILOS HOME*/
+.sectionBienvenidos{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+
+.articuloConocenos p{
+    font-size: 20px;
+}
+
+
+/*ESTILOS PRODUCTOS*/
+table{
+    margin: 3rem 4rem 3rem 4rem;
+    }
+tr{
+    background-color: #e2e2e2;
+    color: #232323;
+    }
+th{
+    background-color: #ff7f58;
+    color: #232323;
+    padding: 1rem;
+    }
+td{
+    padding: 1rem;
+    }
+td ul{
+    list-style-type:square;
+}
+td ol{
+    list-style-type:upper-roman ;
+}
+.producto{
+    background-color: #a17dcf;
+    color: #ececec;
+    font-weight: bold;
+    }
+.animate__animated.animate__fadeInLeft{
+    animation-duration:3s;
+    animation-iteration-count: initial;
+}
+.animate__animated.animate__fadeInUp{
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+/*ESTILOS GALERIA*/
+#grillaImagenesGaleria{
+    margin: 0% 5% 5% 5%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 19% 19% 19% 19% 19%;
+    grid-template-areas: 
+                        "fotoGrandeUno fotoGrandeUno fotoChicaUno"
+                        "fotoGrandeUno fotoGrandeUno fotoChicaDos"
+                        "fotoChicaTres fotoGrandeDos fotoGrandeDos"
+                        "fotoChicaCuatro fotoGrandeDos fotoGrandeDos"
+                        "fotoChicaCinco fotoChicaSeis fotoChicaSiete";
+    grid-column-gap:1.5% ;
+    grid-row-gap: 1.25%;
+}
+#grillaImagenesGaleria div img{
+    width: 100%;
+    height: 100%;
+}
+.fotoGrandeUno{
+    grid-area: fotoGrandeUno;
+}
+.fotoGrandeDos{
+    grid-area: fotoGrandeDos;
+}
+.fotoChicaUno{
+    grid-area: fotoChicaUno;
+}
+.fotoChicaDos{
+    grid-area: fotoChicaDos;
+}
+.fotoChicaTres{
+    grid-area: fotoChicaTres;
+}
+.fotoChicaCuatro{
+    grid-area: fotoChicaCuatro;
+}
+.fotoChicaCinco{
+    grid-area: fotoChicaCinco;
+}
+.fotoChicaSeis{
+    grid-area: fotoChicaSeis;
+}
+.fotoChicaSiete{
+    grid-area: fotoChicaSiete;
+}
+#videosGaleria{
+    margin-bottom: 3rem;
+    background-color: #00eeca;
+    display: flex;
+    justify-content: center;
+}
+#videosGaleria video{
+    width: 100%;
+}
+
+/*ESTILOS NOVEDADES*/
+#grillaNovedades{
+    height: 100%;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 74% 25%;
+    grid-template-rows: 64% 40%;
+    grid-template-areas: 
+                        "articuloUno    aside"
+                        "articuloDos    articuloDos";
+    grid-column-gap: 1%;
+    grid-row-gap: 2%;
+}
+.productosNuevos{
+    background-color: #232323;
+    color: #ffffff;
+    padding:2rem 3rem 2rem 3rem;
+    grid-area: articuloUno;
+}
+.productosNuevos h2{
+    color: #a17dcf;
+    text-align: left;
+    margin: 0rem 8rem 0rem 8rem;
+}
+.productosNuevos article{
+    display: inline-block;
+    width: 43%;
+    margin:0rem 1rem 0rem 1rem
+}
+.novedadesPersonalizado{
+    background-color: #a17dcf;
+    color: #ffffff;
+    padding:2rem 3rem 2rem 3rem;
+    grid-area: articuloDos;
+}
+.novedadesPersonalizado h2{
+    color: #232323;
+}
+.novedadesPersonalizado h3{
+    color: #232323;
+}
+.sorteo{
+    background-color: #00eeca;
+    color: #232323;
+    grid-area: aside;
+    padding:2rem 1rem 2rem 1rem
+    /*
+    display: inline-block;
+    width: 20%;
+    */
+}
+.sorteo h3{
+    color: #232323;
+}
+
+/*ESTILOS CONTACTO*/
+fieldset{
+    margin:2rem 4rem 3rem 4rem;
+    }
+.mainContacto h1{
+    margin-bottom: 0rem;
+}
+.mainB .parrafoContacto{
+    margin: 2rem 23rem 8rem 23rem;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.contactanosFormulario{
+    margin:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contactanosFormulario div{
+    width: 49%;
+    margin-top: 1.5rem;
+}
+.contactanosFormulario .formularioComentarios{
+    width: 100%;
+}
+.contactanosFormulario .formularioCheckBox{
+    width: 100%;
+}
+.formularioCheckBox{
+    font-weight: 700;
+    color: #a17dcf;
+}
+.botonesFormulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.botonesFormulario input{
+    width: 25%;
+    font-size: 20px;
+    background-color: #00eeca;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    color: #232323;
+    margin-top: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+}
+.botonesFormulario input:hover{
+    background-color: #232323;
+    color: #00eeca;
+}
+
+
+/*INICIO CORRECCIONES X BOOTSTRAP*/
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+.navegadorB{
+    padding-top: 1.2rem;
+}
+.navegador ul{
+    padding-left: 40px;
+}
+.mainB{
+    margin-top: 15rem;
+}
+.mainB .contenedorServicios section h2{
+    font-size: 35px;
+    font-weight: bold;
+}
+#tituloB{
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    font-size: 50px;
+    text-align: center;
+}
+.form-control{
+    width: 90%;
+    border: 1.5px solid #a17dcf;
+}
+.formularioComentarios .form-control{
+    width: 95%;
+}
+.formularioMotivo .form-select{
+    width: 85%;
+    border: 1.5px solid #a17dcf;
+}
+h2{
+    font-size: 25px;
+}
+h4{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.contenedorNegro__parrafo{
+        font-size: 12px;
+        font-weight: normal;
+        text-align: justify;
+}
+/*FIN CORRECCIONES X BOOTSTRAP*/
+
+
+/*MEDIA QUERY CELULARES*/
+
+@media only screen and (max-width:520px){
+    /*ESTILOS GENERALES MOBILE*/
+    header{
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+        }
+    nav ul li a{
+        color: #ececec;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+    }
+    nav ul li{
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        }
+    nav ul li a:focus{
+        color: #232323;
+        font-weight:800 ;
+    }
+    .contenedorLogo{
+        padding: 1rem 0rem 1rem 0rem;
+        width: 25%;
+        height: 25%;
+    }
+    .contenedorLogo img{
+        width:100%;
+        height: 100%;
+    }
+
+    /*ESTILOS HOME MOBILE*/
+    main{
+        margin-top: 0%;
+        margin-bottom: 1rem;
+    }
+    .sectionBienvenidos{
+        flex-direction: column ;
+        margin-top: 1rem;
+    }
+    .sectionBienvenidos img{
+        width: 100%;
+    }
+    .sectionBienvenidos p{
+        margin:2rem 1rem 2rem 1rem;
+        font-size: 12px;
+    }
+    #tituloHome{
+        margin-top: 2rem;
+        font-size: 25px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .sectionBienvenidos article{
+        margin: 1rem 0rem 1rem 0rem;
+        width: 100%;
+    }
+    .conocenosLink{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .conocenosLink a{
+        margin:0%;
+        font-size: 15px;
+    }
+    .articuloConocenos{
+        padding: 0rem;
+    }
+    .articuloServicios{
+        padding: 0rem;
+    }
+    #conocenos div{
+        margin-bottom: 0%;
+    }
+    #conocenos .seccionNegra{
+        display: flex;
+        justify-content:space-around;
+        flex-wrap: wrap;
+    }
+    #conocenos .seccionNegra article{
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+/*ESTILOS FOOTER MOBILE*/
+    footer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    footer div p{
+        font-size: 12px;
+    }
+    .contacto{
+        text-align: center;
+        width: 100%;
+    }
+    .contacto h6{
+        margin-top: 0;
+    }
+    .ubicacion{
+        text-align: center;
+        width: 100%;
+    }
+    .redesSociales{
+        text-align: center;
+        width: 100%;
+        padding:1rem 0rem 3rem 0rem;
+    }
+    .redesSociales a i{
+        color: #ececec;
+        font-size: 15px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        }
+}
+
+@media only screen and (max-width:768px){
+/*ESTILOS GENERALES MOBILE*/
+header{
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+nav{
+    width: 100%;
+    }
+nav ul li a{
+    color: #ececec;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    }
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+}
+nav ul li{
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    }
+nav ul li a:focus{
+    color: #232323;
+    font-weight:800 ;
+}
+.contenedorLogo{
+    padding: 1rem 0rem 1rem 0rem;
+    width: 15%;
+    height: 15%;
+}
+.contenedorLogo img{
+    width:100%;
+    height: 100%;
+}
+
+/*ESTILOS HOME MOBILE*/
+main{
+    margin-top: 0%;
+    margin-bottom: 1rem;
+}
+.sectionBienvenidos{
+    flex-direction: column ;
+    margin-top: 1rem;
+}
+.sectionBienvenidos img{
+    width: 100%;
+}
+.sectionBienvenidos p{
+    margin:2rem 1rem 2rem 1rem;
+    font-size: 12px;
+}
+#tituloHome{
+    margin-top: 2rem;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.sectionBienvenidos article{
+    margin: 1rem 0rem 1rem 0rem;
+    width: 100%;
+}
+.conocenosLink{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.conocenosLink a{
+    margin:0%;
+    font-size: 15px;
+}
+.articuloConocenos{
+    padding: 0rem;
+}
+.articuloServicios{
+    padding: 0rem;
+}
+#conocenos div{
+    margin-bottom: 0%;
+}
+#conocenos .seccionNegra article{
+    border-bottom: solid 1px #00eeca;
+    padding-bottom: 3rem;
+}
+#conocenos .seccionNegra article i{
+    padding-bottom: 1rem;
+}
+}
